@@ -10,6 +10,7 @@ import {
 import { cookies } from "next/headers"
 import { CartWithCheckoutStep } from "types/global"
 import { getCheckoutStep } from "@lib/util/get-checkout-step"
+import Script from "next/script"
 
 export default async function CheckoutForm() {
   const cartId = cookies().get("_medusa_cart_id")?.value
@@ -43,7 +44,7 @@ export default async function CheckoutForm() {
 
   return (
     <div>
-      <div className="w-full grid grid-cols-1 gap-y-8">
+      <div className="grid w-full grid-cols-1 gap-y-8">
         <div>
           <Addresses cart={cart} customer={customer} />
         </div>

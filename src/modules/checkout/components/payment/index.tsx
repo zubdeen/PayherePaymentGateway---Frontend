@@ -153,7 +153,7 @@ const Payment = ({
 
             {isStripe && stripeReady && (
               <div className="mt-5 transition-all duration-150 ease-in-out">
-                <Text className="txt-medium-plus text-ui-fg-base mb-1">
+                <Text className="mb-1 txt-medium-plus text-ui-fg-base">
                   Enter your card details:
                 </Text>
 
@@ -191,9 +191,9 @@ const Payment = ({
 
         <div className={isOpen ? "hidden" : "block"}>
           {cart && paymentReady && cart.payment_session && (
-            <div className="flex items-start gap-x-1 w-full">
+            <div className="flex items-start w-full gap-x-1">
               <div className="flex flex-col w-1/3">
-                <Text className="txt-medium-plus text-ui-fg-base mb-1">
+                <Text className="mb-1 txt-medium-plus text-ui-fg-base">
                   Payment method
                 </Text>
                 <Text className="txt-medium text-ui-fg-subtle">
@@ -209,11 +209,11 @@ const Payment = ({
                   )}
               </div>
               <div className="flex flex-col w-1/3">
-                <Text className="txt-medium-plus text-ui-fg-base mb-1">
+                <Text className="mb-1 txt-medium-plus text-ui-fg-base">
                   Payment details
                 </Text>
-                <div className="flex gap-2 txt-medium text-ui-fg-subtle items-center">
-                  <Container className="flex items-center h-7 w-fit p-2 bg-ui-button-neutral-hover">
+                <div className="flex items-center gap-2 txt-medium text-ui-fg-subtle">
+                  <Container className="flex items-center p-2 h-7 w-fit bg-ui-button-neutral-hover">
                     {paymentInfoMap[cart.payment_session.provider_id]?.icon || (
                       <CreditCard />
                     )}
