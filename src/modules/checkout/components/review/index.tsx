@@ -44,7 +44,7 @@ const Review = ({
               <Text className="mb-1 txt-medium-plus text-ui-fg-base">
                 By clicking the Place Order button, you confirm that you have
                 read, understand and accept our Terms of Use, Terms of Sale and
-                Returns Policy and acknowledge that you have read Medusa
+                Returns Policy and acknowledge that you have read MG
                 Store&apos;s Privacy Policy.
               </Text>
             </div>

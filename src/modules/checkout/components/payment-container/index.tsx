@@ -8,13 +8,6 @@ import Radio from "@modules/common/components/radio"
 
 import PaymentTest from "../payment-test"
 
-// import paymentProviders  from "/Users/HP/OneDrive/Documents/Projects/PayherePayment Gateway - Backend/my-medusa-store/src/services/cod-payment.js";
-
-// const paymentProviders = [
-//   'stripe',
-//   'paypal',
-// ];
-
 type PaymentContainerProps = {
   paymentSession: PaymentSession
   selectedPaymentOptionId: string | null

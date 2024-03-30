@@ -23,11 +23,11 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
   return (
     <div className="h-full">
       <div className="flex items-center h-full">
-        <Popover className="h-full flex">
+        <Popover className="flex h-full">
           {({ open, close }) => (
             <>
               <div className="relative flex h-full">
-                <Popover.Button className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base">
+                <Popover.Button className="relative flex items-center h-full transition-all duration-200 ease-out focus:outline-none hover:text-ui-fg-base">
                   Menu
                 </Popover.Button>
               </div>
@@ -49,7 +49,7 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                         <XMark />
                       </button>
                     </div>
-                    <ul className="flex flex-col gap-6 items-start justify-start">
+                    <ul className="flex flex-col items-start justify-start gap-6">
                       {Object.entries(SideMenuItems).map(([name, href]) => {
                         return (
                           <li key={name}>
@@ -84,7 +84,7 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                         />
                       </div>
                       <Text className="flex justify-between txt-compact-small">
-                        © {new Date().getFullYear()} Medusa Store. All rights
+                        © {new Date().getFullYear()} MG Store LK. All rights
                         reserved.
                       </Text>
                     </div>

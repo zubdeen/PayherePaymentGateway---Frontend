@@ -29,7 +29,7 @@ export default function CheckoutLayout({
             href="/"
             className="uppercase txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base"
           >
-            Medusa Store
+            MG Store LK
           </LocalizedClientLink>
           <div className="flex-1 basis-0" />
         </nav>
